@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\TopGunDuBled.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{74A74A6B-2F56-4821-8ADB-650D099F8E17}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TopGunDuBled.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\TopGunDuBledEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{4B2CC2FA-213D-4D93-8FFE-3142FCB9CFFB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\TopGunDuBled">
+      <UniqueIdentifier>{76573D70-C730-42C2-8D2E-CBDD16DDA38B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TopGunDuBled\TopGunDuBled.Build.cs">
+      <Filter>Source\TopGunDuBled</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\TopGunDuBled\TopGunDuBled.cpp">
+      <Filter>Source\TopGunDuBled</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TopGunDuBled\TopGunDuBled.h">
+      <Filter>Source\TopGunDuBled</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TopGunDuBled\TopGunDuBledGameMode.cpp">
+      <Filter>Source\TopGunDuBled</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TopGunDuBled\TopGunDuBledGameMode.h">
+      <Filter>Source\TopGunDuBled</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TopGunDuBled\TopGunDuBledPawn.cpp">
+      <Filter>Source\TopGunDuBled</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TopGunDuBled\TopGunDuBledPawn.h">
+      <Filter>Source\TopGunDuBled</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
