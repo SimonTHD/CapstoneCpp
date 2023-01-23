@@ -32,8 +32,8 @@
 /wd4244
 /wd4838
 /I .
-/I C:\Users\thiba\delivery\TopGunDuBled\Intermediate\Build\Win64\UE4Editor\Inc\TopGunDuBled
-/I C:\Users\thiba\delivery\TopGunDuBled\Source
+/I C:\Users\thiba\delivery\CapstoneCpp\TopGunDuBled\Intermediate\Build\Win64\UE4Editor\Inc\TopGunDuBled
+/I C:\Users\thiba\delivery\CapstoneCpp\TopGunDuBled\Source
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -262,12 +262,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\winrt"
-/FI"C:\Users\thiba\delivery\TopGunDuBled\Intermediate\Build\Win64\TopGunDuBledEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"C:\Users\thiba\delivery\TopGunDuBled\Intermediate\Build\Win64\TopGunDuBledEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\thiba\delivery\TopGunDuBled\Intermediate\Build\Win64\TopGunDuBledEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"C:\Users\thiba\delivery\TopGunDuBled\Intermediate\Build\Win64\UE4Editor\Inc\TopGunDuBled\TopGunDuBled.init.gen.cpp"
-/FI"C:\Users\thiba\delivery\TopGunDuBled\Intermediate\Build\Win64\UE4Editor\Development\TopGunDuBled\Definitions.TopGunDuBled.h"
-/Fo"C:\Users\thiba\delivery\TopGunDuBled\Intermediate\Build\Win64\UE4Editor\Development\TopGunDuBled\TopGunDuBled.init.gen.cpp.obj"
+/FI"C:\Users\thiba\delivery\CapstoneCpp\TopGunDuBled\Intermediate\Build\Win64\TopGunDuBledEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"C:\Users\thiba\delivery\CapstoneCpp\TopGunDuBled\Intermediate\Build\Win64\TopGunDuBledEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\Users\thiba\delivery\CapstoneCpp\TopGunDuBled\Intermediate\Build\Win64\TopGunDuBledEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"C:\Users\thiba\delivery\CapstoneCpp\TopGunDuBled\Intermediate\Build\Win64\UE4Editor\Inc\TopGunDuBled\TopGunDuBled.init.gen.cpp"
+/FI"C:\Users\thiba\delivery\CapstoneCpp\TopGunDuBled\Intermediate\Build\Win64\UE4Editor\Development\TopGunDuBled\Definitions.TopGunDuBled.h"
+/Fo"C:\Users\thiba\delivery\CapstoneCpp\TopGunDuBled\Intermediate\Build\Win64\UE4Editor\Development\TopGunDuBled\TopGunDuBled.init.gen.cpp.obj"
 /TP
 /GR-
 /W4

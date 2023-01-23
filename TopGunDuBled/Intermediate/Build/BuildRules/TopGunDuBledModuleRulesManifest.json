@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\thiba\\delivery\\TopGunDuBled\\Source\\TopGunDuBled\\TopGunDuBled.Build.cs",
-		"C:\\Users\\thiba\\delivery\\TopGunDuBled\\Source\\TopGunDuBled.Target.cs",
-		"C:\\Users\\thiba\\delivery\\TopGunDuBled\\Source\\TopGunDuBledEditor.Target.cs"
+		"C:\\Users\\thiba\\delivery\\CapstoneCpp\\TopGunDuBled\\Source\\TopGunDuBled\\TopGunDuBled.Build.cs",
+		"C:\\Users\\thiba\\delivery\\CapstoneCpp\\TopGunDuBled\\Source\\TopGunDuBled.Target.cs",
+		"C:\\Users\\thiba\\delivery\\CapstoneCpp\\TopGunDuBled\\Source\\TopGunDuBledEditor.Target.cs"
 	],
 	"EngineVersion": "4.27.2"
 }
