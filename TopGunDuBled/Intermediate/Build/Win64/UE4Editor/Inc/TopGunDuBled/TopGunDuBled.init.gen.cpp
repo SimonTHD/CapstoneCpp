@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeTopGunDuBled_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x545F4329,
-				0x6AC47439,
+				0xA73BE6FB,
+				0x2F0B9D79,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

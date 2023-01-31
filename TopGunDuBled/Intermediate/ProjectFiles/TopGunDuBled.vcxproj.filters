@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\TopGunDuBled.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{74A74A6B-2F56-4821-8ADB-650D099F8E17}</UniqueIdentifier>
+      <UniqueIdentifier>{DA8DD22A-C35C-4CA5-9F2E-5E0330D64F5F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TopGunDuBled.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,9 @@
     <None Include="..\..\Source\TopGunDuBledEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\West_Fighter_Typhoon.png" />
     <Filter Include="Config">
-      <UniqueIdentifier>{4B2CC2FA-213D-4D93-8FFE-3142FCB9CFFB}</UniqueIdentifier>
+      <UniqueIdentifier>{8B8B3871-568D-4729-AD83-3E2997AFD01F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +31,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\TopGunDuBled">
-      <UniqueIdentifier>{76573D70-C730-42C2-8D2E-CBDD16DDA38B}</UniqueIdentifier>
+      <UniqueIdentifier>{C711F452-44BB-4B46-A888-C8F2EF70E0DF}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\TopGunDuBled\Maverick.cpp">
+      <Filter>Source\TopGunDuBled</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TopGunDuBled\Maverick.h">
+      <Filter>Source\TopGunDuBled</Filter>
+    </ClInclude>
     <None Include="..\..\Source\TopGunDuBled\TopGunDuBled.Build.cs">
       <Filter>Source\TopGunDuBled</Filter>
     </None>

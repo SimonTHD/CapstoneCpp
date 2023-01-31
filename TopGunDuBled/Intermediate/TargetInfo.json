@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "TopGunDuBled",
-			"Path": "C:\\Users\\thiba\\delivery\\TopGunDuBled\\Source\\TopGunDuBled.Target.cs",
+			"Path": "C:\\Users\\thiba\\delivery\\CapstoneCpp\\TopGunDuBled\\Source\\TopGunDuBled.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "TopGunDuBledEditor",
-			"Path": "C:\\Users\\thiba\\delivery\\TopGunDuBled\\Source\\TopGunDuBledEditor.Target.cs",
+			"Path": "C:\\Users\\thiba\\delivery\\CapstoneCpp\\TopGunDuBled\\Source\\TopGunDuBledEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]
