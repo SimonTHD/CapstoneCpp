@@ -2,6 +2,9 @@
 
 
 #include "Maverick.h"
+#include "Kismet/GameplayStatics.h"
+
+#define print(text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 1.5, FColor::Green,text)
 
 // Sets default values
 AMaverick::AMaverick()
@@ -9,6 +12,47 @@ AMaverick::AMaverick()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+}
+
+void AMaverick::increaseLap()
+{
+	currentLap++;
+	if (currentLap == 1)
+	{
+		FTimerHandle UnusedHandle;
+		GetWorldTimerManager().SetTimer(UnusedHandle, this, &AMaverick::startTimer, 1, true);
+	}
+	if (currentLap == maxCurrentLap)
+	{
+		endGame();
+	}
+}
+
+int AMaverick::getCurrentLap()
+{
+	return currentLap;
+}
+
+void AMaverick::endGame()
+{
+	print("ENDGAME");
+	UGameplayStatics::OpenLevel(GetWorld(), FName("MainMenu"), true);
+}
+
+void AMaverick::startTimer()
+{
+	seconds++;
+	// printf("seconds : %d", seconds);
+}
+
+void AMaverick::setRespawnLocation(FVector LocToSave)
+{
+	RespawnLocation = LocToSave;
+}
+
+FVector AMaverick::getRespawnLocation()
+{
+	return FVector(RespawnLocation);
 }
 
 void AMaverick::ProcessKeyPitch(float Rate)
