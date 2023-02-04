@@ -38,6 +38,22 @@ public:
 	bool bIntentionalPitch{ false };
 	bool bIntentionalRoll{ false };
 
+	void increaseLap();
+	UFUNCTION(Category = Race, BlueprintCallable, BlueprintPure)
+		int getCurrentLap();
+	
+	void endGame();
+	void startTimer();
+	void setRespawnLocation(FVector LocToSave);
+	FVector getRespawnLocation();
+	// Timer variables
+	UPROPERTY(Category = Timer, EditDefaultsOnly, BlueprintReadOnly)
+		int seconds;
+
+	// Race variables
+	UPROPERTY(Category = Race, EditAnywhere, BlueprintReadOnly)
+		int maxCurrentLap = 3;
+
 protected:
 
 	void ProcessKeyPitch(float Rate);
@@ -54,6 +70,7 @@ protected:
 	virtual void BeginPlay() override;
 
 public:	
+
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
@@ -62,4 +79,7 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+private:
+	FVector RespawnLocation;
+	int currentLap = 0;
 };
