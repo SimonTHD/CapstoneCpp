@@ -29,7 +29,7 @@ public:
 	float PitchRateMultiplier{ 200.f };
 
 	UPROPERTY(VisibleAnywhere, Category = "Flight")
-	float CurrentForwardSpeed{ 500.f };
+	float CurrentForwardSpeed{ 1000.f };
 
 	float CurrentYawSpeed;
 	float CurrentPitchSpeed;

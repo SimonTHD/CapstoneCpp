@@ -122,7 +122,7 @@ void AMaverick::Tick(float DeltaTime)
 
 	AddActorLocalRotation(DeltaRotation);
 
-	GEngine->AddOnScreenDebugMessage(0, 0.f, FColor::Red, FString::Printf(TEXT("ForwardSpeed: %f"), CurrentForwardSpeed));
+	/*GEngine->AddOnScreenDebugMessage(0, 0.f, FColor::Red, FString::Printf(TEXT("ForwardSpeed: %f"), CurrentForwardSpeed));*/
 	Super::Tick(DeltaTime);
 
 }
