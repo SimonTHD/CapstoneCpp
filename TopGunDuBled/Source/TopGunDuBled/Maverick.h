@@ -31,6 +31,9 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = "Flight")
 	float CurrentForwardSpeed{ 1000.f };
 
+	UPROPERTY(EditAnywhere, Category = "Collision")
+	TEnumAsByte<ECollisionChannel> TraceChannelProperty = ECC_Pawn;
+
 	float CurrentYawSpeed;
 	float CurrentPitchSpeed;
 	float CurrentRollSpeed;
@@ -65,6 +68,8 @@ protected:
 	//for calculating rotation
 	void ProcessRoll(float Value);
 	void ProcessPitch(float Value);
+
+	void ProcessKeyShoot(float isShooting);
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
