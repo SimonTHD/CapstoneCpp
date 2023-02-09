@@ -91,20 +91,19 @@ void AMaverick::ProcessRoll(float Value)
 
 void AMaverick::ProcessKeyShoot(float isShooting)
 {
-	
 	if (isShooting == 1)
 	{
 		FHitResult Hit;
 
 		FVector TraceStart = GetActorLocation();
 		// Pour faire un raytrace plus grand ou pas
-		FVector TraceEnd = GetActorLocation() + GetActorForwardVector() * 10000.0f;
+		FVector TraceEnd = GetActorLocation() + GetActorForwardVector() * 20000.0f;
 
 		FCollisionQueryParams QueryParams;
 		QueryParams.AddIgnoredActor(this);
 
 		FHitResult HitOut;
-		FVector ShotDirection = HitOut.ImpactNormal; // ...damage direction
+		FVector ShotDirection = HitOut.ImpactNormal;
 		TSubclassOf <UDamageType> DamageType;
 
 		GetWorld()->LineTraceSingleByChannel(Hit, TraceStart, TraceEnd, TraceChannelProperty, QueryParams);
@@ -112,11 +111,13 @@ void AMaverick::ProcessKeyShoot(float isShooting)
 		// DebugDraw
 		DrawDebugLine(GetWorld(), TraceStart, TraceEnd, Hit.bBlockingHit ? FColor::Blue : FColor::Red, false, 5.0f, 0, 10.0f);
 		UE_LOG(LogTemp, Log, TEXT("Tracing line: %s to %s"), *TraceStart.ToCompactString(), *TraceEnd.ToCompactString());
+
+		/*playsound*/
 		
 		if (Hit.bBlockingHit && IsValid(Hit.GetActor()))
 		{
 			//UGameplayStatics::ApplyDamage(Hit.GetActor(), 25.0f, GetWorld()->GetFirstPlayerController(), this, UDamageType::StaticClass());
-			UGameplayStatics::ApplyPointDamage(Hit.GetActor(), 50.0f, ShotDirection, HitOut, GetOwner()->GetInstigatorController(), this, DamageType);
+			UGameplayStatics::ApplyPointDamage(Hit.GetActor(), 100.0f, ShotDirection, HitOut, GetOwner()->GetInstigatorController(), this, DamageType);
 			GEngine->AddOnScreenDebugMessage(0, 0.f, FColor::Red, FString::Printf(TEXT("Trace hit actor: %s"), *Hit.GetActor()->GetName()));
 		}
 		else {
@@ -185,6 +186,6 @@ void AMaverick::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAxis("TurnRate", this, &AMaverick::ProcessKeyRoll);
 	PlayerInputComponent->BindAxis("LookUp", this, &AMaverick::ProcessMouseYInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &AMaverick::ProcessKeyPitch);
-	PlayerInputComponent->BindAxis("Shoot", this, &AMaverick::ProcessKeyShoot);
+	//PlayerInputComponent->BindAxis("Shoot", this, &AMaverick::ProcessKeyShoot);
 }
 
